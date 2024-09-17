@@ -131,7 +131,6 @@ calculated_on_the_fly = SelectNode(
         "computed": Col("computed"),
     },
 )
-import timeit
 
 print(
     "with copy: ", timeit.timeit("calculated_after_copy.execute()", globals=globals())
